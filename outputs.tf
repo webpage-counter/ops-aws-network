@@ -2,11 +2,11 @@
 
 #------------Networking outputs
 output "public_subnets" {
-  value = join(", ", module.networking.public_subnets)
+  value = module.networking.public_subnets
 }
 
 output "subnet_ips" {
-  value = join(", ", module.networking.subnet_ips)
+  value = module.networking.subnet_ips
 }
 
 output "pubic_sec_group" {
