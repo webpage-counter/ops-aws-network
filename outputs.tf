@@ -5,6 +5,10 @@ output "public_subnets" {
   value = join(", ", module.networking.public_subnets)
 }
 
+output "private_subnets" {
+  value = join(", ", module.networking.private_subnets)
+}
+
 output "subnet_ips" {
   value = join(", ", module.networking.subnet_ips)
 }
