@@ -17,3 +17,6 @@ output "VPC_ID" {
   value = module.networking.vpc_id
 }
 
+output "NAT" {
+  value = module.networking.natgw
+}
