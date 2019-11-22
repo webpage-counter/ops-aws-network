@@ -6,7 +6,7 @@ output "public_subnets" {
 }
 
 output "private_subnets" {
-  value = join(", ", module.networking.private_subnets)
+  value = module.networking.private_subnets
 }
 
 output "subnet_ips" {
